@@ -1,0 +1,365 @@
+html {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: darkslategrey;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grey {
+    color: lightgrey;   
+}
+
+#feature {
+    background-color: lightgrey;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2rem;
+    flex: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategrey;
+    padding-left: 1rem;
+}
+
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 470px) {
+    header {
+        display: none;
+    }
+    #mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+    }
+}
+
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 2rem 1.5rem;
+}
+
+#banner img {
+    width: 60%;
+    height: auto;
+    padding-right: 1.5rem;
+}
+
+#banner button {
+    padding: 0.5rem;
+    width: 90%;
+    background-color: grey;
+}
+#banner button h5 {    
+    color: lightgrey;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 470px) {
+    #banner {
+        flex-direction: column;
+        padding: 0rem;
+    }
+    #banner img {
+        width: 100%;
+        padding-right: 0rem;
+    }
+    #banner h1 {
+        font-size: 2.5rem;
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+    #banner h3 {
+        font-size: 1.5rem;
+        padding: 0rem 1rem 1.5rem 1rem;
+    }
+    button {
+        margin: 0 1rem 2rem 1rem;   
+    }
+}
+
+#information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#information article {
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+#information article img {
+    width: 100%;
+    height: auto;
+    
+}
+
+#information article h2 {
+    margin-bottom: 1.5rem;
+}
+
+#information article h5 {
+    margin-top: 2rem;   
+}
+
+#information .column {
+    width: 40%;
+}
+
+.column .tile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+
+.column .tile img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.column .tile p {
+    padding 0.5rem 0rem;
+}
+
+#column-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 470px) {
+    article {
+        display: none;
+    }
+    #information .column {
+        display: none;
+    }
+    #column-mobile {
+        display: block;
+        padding: 1rem;
+    }
+    #column-mobile .tile {
+        margin-bottom: 2rem;
+    }
+    #column-mobile img {
+        width: 100%;
+    }
+    #column-mobile h3 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    #column-mobile p {
+        padding: 1rem;   
+    }
+    #column-mobile a {
+        padding: 1rem;
+    }
+}
+
+#courses {
+    background-color: lightgrey;
+    padding: 2rem 3.5rem;
+}
+
+#courses h2 {
+    text-align: center;
+}
+
+#courses .row {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    margin-top: 2rem;
+}
+
+#courses .cell {
+    margin: 0rem 1rem;
+    background-color: white;
+    width: 30%;
+}
+
+#courses img {
+    width: 100%;
+    height: auto;
+}
+
+#courses h4 {
+    margin: 1rem;
+}
+
+#courses h6 {
+    margin: 0.5rem 1rem;
+    color: grey;
+}
+
+#courses p {
+    font-size: 1.5rem;
+    color: grey;
+    margin: 0rem 1rem 1.5rem 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+    #courses {
+        padding: 2rem 0rem;
+        background-color: white;
+    }
+    #courses .row {
+        flex-direction: column;
+        margin: 0rem;
+    }
+    #courses .cell {
+        width: 90%;
+        background-color: darkgrey;
+        margin-top: 0.5rem;
+
+    }
+    #courses h4 {
+        padding: 1rem 1rem 1.5rem 1rem;   
+    }
+    #courses img, h6, p {
+        display: none;
+    }
+}
+
+#thesis {
+    background-color: white;
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+#thesis h2 {
+    text-align: center;
+}
+
+#thesis .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+#thesis .video {
+    width: 60%;
+    padding: 0rem 1.5rem;
+}
+
+#thesis video {
+    width: 100%;
+    height: auto;
+}
+
+#thesis h4, h6 {
+    padding: 0.5rem 1.5rem;
+}
+
+#thesis .column {
+    width: 40%;
+}
+
+#thesis .tile {
+    border: none;
+}
+
+#thesis .tile img {
+    width: 35%;
+    height: auto;
+}
+
+@media only screen and (max-width: 470px) {
+    #thesis {
+        padding: 2rem 0rem 1.5rem 0rem;
+    }
+    #thesis .row {
+        margin-top: 1rem;
+    }
+    #thesis .video {
+        width: 100%;
+        padding: 0rem;
+    }
+    #thesis .video h4, h6 {
+        display: none;
+    }
+    #thesis .video video {
+        widows: 100%;
+        height: auto;
+    }
+    #thesis .column {
+        display: none;
+    }
+}
+
+.footer h5 {
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 470px) {
+    .footer {
+        padding-top: 1.5rem;
+    }
+    .footer h5 {
+        padding: 1rem;
+    }
+}
